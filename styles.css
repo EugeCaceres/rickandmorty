@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+* {
+    box-sizing: border-box;
+    /*Para que no crezca mas de lo que yo le di de valor */
+}
+
+body {
+    margin: 0;
+    background-color: #86EFAC;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%239333EA' stroke-width='73' stroke-opacity='0.24' %3E%3Ccircle fill='%2386EFAC' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%236cecb2' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%234be8ba' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2308e4c2' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2300dfca' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2300dad3' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2300d5dc' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%2300d0e5' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2300caed' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2300c4f4' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2300bdfa' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%2300b6ff' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%2300afff' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2300a7ff' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23009fff' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%230096ff' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23008cfd' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%233B82F6' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: auto; */
+}
+
+/* Header y sus elementos */
+header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("Img/rymbanner2.webp");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    border-bottom: 2px solid black;
+}
+
+.title {
+    font-family: "Fredoka One", cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+    right: 25%;
+
+}
+
+.titleTwo {
+    font-size: 76px;
+    color: rgb(13, 6, 73);
+    padding-left: 10%;
+
+}
+
+legend {
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    padding-left: 82%;
+
+}
+
+#filters #genderFilter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    position: relative;
+    left: 80%;
+    padding: 8px 16px;
+    margin: 10px;
+    border: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border: 2px solid #9333ea;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5)
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+/* Tarjetas y botones */
+.card {
+
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #9233eadb;
+    border: 2px solid black;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 20%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.see-btn {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+}
+
+.btn-see {
+    background-color: #3b82f6;
+    color: black;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Paginacion */
+.page .btnStyle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 20px;
+
+
+}
+
+#first,
+#prev,
+#next,
+#last {
+    font-size: 20px;
+    background-color: #3b82f6;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.info {
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.infoTotal {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* Footer */
+footer {
+
+    background-image: url(Img/cielocorto.jpg);
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-x: 8%;
+    height: 700px;
+    border-top: 2px solid #86efac;
+    font-size: 56px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 250px;
+
+
+
+}
+
+a {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px;
+    position: relative;
+    top: 250px;
+    width: 100px;
+    height: 100px;
+
+
+}
+
+h3 {
+    display: none;
+}
+
+.footer p {
+    position: relative;
+    left: 200px;
+    color: #0af761;
+}
+
+/* descripcion de las cartas de detalles */
+.description-card {
+    width: 500px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #9233eadb;
+    border: 2px solid black;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.description-card img {
+    width: 80%;
+    border-radius: 20%;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.5)
+}
+
+.chrDetails {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 26px;
+}
+
+/* Consulta de medios para pantallas más pequeñas */
+@media (max-width:420px) {
+
+    body {
+        background-image: url(Img/fondobody.png);
+        background-repeat: no-repeat;
+        background-position: cover cover;
+    }
+
+    header {
+        background-image: url("Img/t2gZFoh.jpeg");
+        background-size: cover;
+        background-position: cover cover;
+        border-bottom: transparent;
+        height: 150px;
+
+
+    }
+
+    .title {
+        display: flex;
+        font-size: 12px;
+        color: white;
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .titleTwo {
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        width: 100%;
+
+    }
+
+    .card {
+        display: flex;
+        width: 100%;
+        gap: 10px;
+    }
+
+    #filters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        position: relative;
+        right: 200px;
+
+
+    }
+
+    .footer {
+        background-image: url(Img/Otros/rick-morty-critica.webp);
+        background-size:cover;
+        background-position: cover cover;
+        height: 180px;
+        margin: 0;
+
+    }
+
+    .footer p {
+        display: none;
+    }
+
+    .footer img {
+        display: none;
+    }
+
+    .footer a{
+        display: none;
+    }
+
+    .btnStyle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 20px; 
+        padding: 10px 10px;
+       
+
+    }
+
+    .description-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #9233eadb;
+        border: 2px solid black;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .description-card img {
+        width: 100%;
+        border-radius: 20%;
+        box-shadow: 8px 8px rgba(0, 0, 0, 0.5)
+    }
+
+   
+}
